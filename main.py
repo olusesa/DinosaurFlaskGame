@@ -26,8 +26,8 @@ def game():
     BLACK = (0, 0, 0)
 
     # Load images
-    dinosaur_img = pygame.image.load('static/assets/dinosaur.PNG')
-    cactus_img = pygame.image.load('static/assets/cactus.PNG')
+    dinosaur_img = pygame.image.load('dinosaur.PNG')
+    cactus_img = pygame.image.load('cactus.PNG')
 
     # Define the player class
     class Player(pygame.sprite.Sprite):
