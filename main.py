@@ -26,14 +26,14 @@ def game():
     BLACK = (0, 0, 0)
 
     # Load images
-    dinosaur_img = pygame.image.load('dinosaur.png')
-    cactus_img = pygame.image.load('cactus.png')
+    dinosaur_img = pygame.image.load('static/assets/dinosaur.PNG')
+    cactus_img = pygame.image.load('static/assets/cactus.PNG')
 
     # Define the player class
     class Player(pygame.sprite.Sprite):
         def __init__(self):
             super().__init__()
-            self.image = "static/assets/dinosaur.PNG"
+            self.image = dinosaur_img
             self.rect = self.image.get_rect()
             self.rect.x = 50
             self.rect.y = SCREEN_HEIGHT - 50
@@ -54,7 +54,7 @@ def game():
     class Cactus(pygame.sprite.Sprite):
         def __init__(self):
             super().__init__()
-            self.image = "static/assets/cactus.PNG"
+            self.image = cactus_img
             self.rect = self.image.get_rect()
             self.rect.x = SCREEN_WIDTH
             self.rect.y = SCREEN_HEIGHT - 50
